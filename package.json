@@ -1,7 +1,7 @@
 {
     "name": "@ryangjchandler/alpine-clipboard",
     "description": "Simply copy to the users clipboard in your Alpine.js components.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "author": "Ryan Chandler <support@ryangjchandler.co.uk>",
     "repository": {
@@ -27,6 +27,5 @@
         "jest": "^25.4.0",
         "jsdom-simulant": "^1.1.2",
         "microbundle": "^0.12.3"
-    },
-    "version": "0.1.0"
+    }
 }
