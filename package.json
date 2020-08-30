@@ -27,5 +27,6 @@
         "jest": "^25.4.0",
         "jsdom-simulant": "^1.1.2",
         "microbundle": "^0.12.3"
-    }
+    },
+    "version": "0.1.0"
 }
