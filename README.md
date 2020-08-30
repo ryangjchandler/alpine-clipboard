@@ -10,7 +10,7 @@ Copy text to the user's clipboard.
 
 ## About
 
-A short bit of information about the plugin and what it does.
+This plugin adds a new `$clipboard` magic property to all of your Alpine components that can be used to copy any piece of data to the user's clipboard.
 
 ## Installation
 
