@@ -24,6 +24,19 @@ Include the following `<script>` tag in the `<head>` of your document:
 
 > **Important**: This must be added **before** loading Alpine.js when using CDN links.
 
+## Usage
+
+### Copying
+
+To copy some data to the clipboard, invoke `$clipboard` from an event handler in your component.
+
+```html
+<div x-data="{ input: '' }">
+    <input x-model="input">
+    <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
+</div>
+```
+
 ## Versioning
 
 This projects follow the [Semantic Versioning](https://semver.org/) guidelines. This means that there *could* be breaking changes on minor version changes, up until v1.x is reached.
