@@ -1,4 +1,4 @@
-import AlpinePlugin from '../dist/alpine-clipboard'
+import AlpineClipboard from '../dist/alpine-clipboard'
 import Alpine from 'alpinejs'
 import { waitFor } from '@testing-library/dom'
 
@@ -15,7 +15,7 @@ test('contents can be copied to clipboard', async () => {
         </div>
     `
 
-    AlpinePlugin.start()
+    AlpineClipboard.start()
     
     await Alpine.start()
 

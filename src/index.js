@@ -1,4 +1,4 @@
-const AlpinePlugin = {
+const AlpineClipboard = {
     start() {
         if (!window.Alpine) {
             throw new Error('Alpine is required for `alpine-clipboard` to work.')
@@ -57,9 +57,9 @@ const AlpinePlugin = {
 const alpine = window.deferLoadingAlpine || ((callback) => callback())
 
 window.deferLoadingAlpine = function (callback) {
-    AlpinePlugin.start()
+    AlpineClipboard.start()
 
     alpine(callback)
 }
 
-export default AlpinePlugin
+export default AlpineClipboard
