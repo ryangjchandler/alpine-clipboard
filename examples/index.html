@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <title>Alpine Clipboard</title>
+    <script src="../dist/alpine-clipboard.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+</head>
+<body>
+    <div x-data="{ input: '' }">
+        <input x-model="input">
+        <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
+    </div>
+</body>
