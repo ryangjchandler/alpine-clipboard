@@ -26,8 +26,6 @@ Include the following `<script>` tag in the `<head>` of your document:
 
 ## Usage
 
-### Copying
-
 To copy some data to the clipboard, invoke `$clipboard` from an event handler in your component.
 
 ```html
@@ -36,6 +34,18 @@ To copy some data to the clipboard, invoke `$clipboard` from an event handler in
     <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
 </div>
 ```
+
+### `Object` and `Array`
+
+Since you can pass any properties through to the `$clipboard` function, if you pass through an `Object` or `Array`, it will be run through `JSON.stringify` before being copied to the clipboard.
+
+```html
+<div x-data="{ items: ['foo', 'bar'] }">
+    <button type="button" @click="$clipboard(items)">Copy to Clipboard</button>
+</div>
+```
+
+The clipboard will now contain `["foo","bar"]`.
 
 ## Versioning
 
