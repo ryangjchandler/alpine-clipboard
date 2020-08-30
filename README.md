@@ -1,12 +1,12 @@
 > ✨ Help support the maintenance of this package by [sponsoring me](https://github.com/sponsors/ryangjchandler).
 
-# Alpine Plugin Template
+# Alpine Clipboard
 
-One short line about the plugin.
+Copy text to the user's clipboard.
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/[repo]?label=version&style=flat-square)
-![GitHub file size in bytes](https://img.shields.io/github/size/[repo]/dist/spruce.js?label=min%20%28no%20gzip%29&style=flat-square)
-[![Monthly downloads via CDN](https://data.jsdelivr.com/v1/package/gh/[repo]/badge)](https://www.jsdelivr.com/package/gh/ryangjchandler/spruce)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ryangjchandler/alpine-clipboard?label=version&style=flat-square)
+![GitHub file size in bytes](https://img.shields.io/github/size/ryangjchandler/alpine-clipboard/dist/alpine-clipboard.js?label=min%20%28no%20gzip%29&style=flat-square)
+[![Monthly downloads via CDN](https://data.jsdelivr.com/v1/package/gh/ryangjchandler/alpine-clipboard/badge)](https://www.jsdelivr.com/package/gh/ryangjchandler/alpine-clipboard)
 
 ## About
 
