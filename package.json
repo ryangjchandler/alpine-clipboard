@@ -1,0 +1,30 @@
+{
+    "name": "alpine-clipboard",
+    "description": "Simply copy to the users clipboard in your Alpine.js components.",
+    "license": "MIT",
+    "author": "Ryan Chandler <support@ryangjchandler.co.uk>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ryangjchandler/alpine-clipboard"
+    },
+    "source": "src/index.js",
+    "main": "dist/alpine-clipboard.js",
+    "umd:main": "dist/alpine-clipboard.umd.js",
+    "module": "dist/alpine-clipboard.module.js",
+    "scripts": {
+        "build": "microbundle",
+        "watch": "microbundle watch",
+        "test": "jest"
+    },
+    "dependencies": {
+        "alpinejs": "^2.6.0"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.11.0",
+        "@testing-library/dom": "^7.2.2",
+        "@testing-library/jest-dom": "^5.5.0",
+        "jest": "^25.4.0",
+        "jsdom-simulant": "^1.1.2",
+        "microbundle": "^0.12.3"
+    }
+}
