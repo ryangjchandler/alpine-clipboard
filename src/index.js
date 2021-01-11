@@ -8,7 +8,9 @@ const AlpineClipboard = {
             return function (target) {
                 let value = target
 
-                if (typeof value !== 'string') {
+                if (typeof value === 'function') {
+                    value = value()
+                } else if (typeof value !== 'string') {
                     try {
                         value = JSON.stringify(value)
                     } catch (e) {
