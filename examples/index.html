@@ -9,4 +9,8 @@
         <input x-model="input">
         <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
     </div>
+
+    <div x-data="{}">
+        <button type="button" @click="$clipboard(() => 'Testing')">Copy 'Testing' to Clipboard</button>
+    </div>
 </body>
