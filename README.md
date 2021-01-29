@@ -14,11 +14,26 @@ This plugin adds a new `$clipboard` magic property to all of your Alpine compone
 
 ## Installation
 
+### NPM
+
+```bash
+npm install @ryangjchandler/alpine-clipboard
+```
+
+> Also available via yarn add @ryangjchandler/alpine-clipboard
+
+Add `$clipboard` to your project by imported before Alpine.js.
+
+```js
+import "@ryangjchandler/alpine-clipboard"
+// import "alpinejs"
+```
+
 ### CDN
 
 Include the following `<script>` tag in the `<head>` of your document:
 
-``` html
+```html
 <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@0.1.x/dist/alpine-clipboard.umd.js"></script>
 ```
 
