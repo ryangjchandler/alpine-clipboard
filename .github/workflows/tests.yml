@@ -22,10 +22,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Build files
-        run: yarn build
+        run: npm run build
 
       - name: Run test suite
-        run: yarn test
+        run: npm run test
