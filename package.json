@@ -8,24 +8,21 @@
         "type": "git",
         "url": "https://github.com/ryangjchandler/alpine-clipboard"
     },
-    "source": "src/index.js",
-    "main": "dist/alpine-clipboard.js",
-    "umd:main": "dist/alpine-clipboard.umd.js",
-    "module": "dist/alpine-clipboard.module.js",
+    "main": "dist/alpine-clipboard.ie11.js",
+    "module": "dist/alpine-clipboard.js",
     "scripts": {
-        "build": "microbundle",
-        "watch": "microbundle watch",
-        "test": "jest"
+        "build": "rollup -c && rollup -c rollup.ie11.config.js",
+        "watch": "rollup -c -w"
     },
     "dependencies": {
         "alpinejs": "^2.6.0"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.11.0",
-        "@testing-library/dom": "^7.2.2",
-        "@testing-library/jest-dom": "^5.5.0",
-        "jest": "^25.4.0",
-        "jsdom-simulant": "^1.1.2",
-        "microbundle": "^0.12.3"
+        "@babel/preset-env": "^7.12.11",
+        "@babel/core": "^7.12.10",
+        "rollup": "^2.35.1",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-filesize": "^9.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0"
     }
 }
