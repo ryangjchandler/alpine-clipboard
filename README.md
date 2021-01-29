@@ -19,7 +19,7 @@ This plugin adds a new `$clipboard` magic property to all of your Alpine compone
 Include the following `<script>` tag at the end of your `<body>`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@0.2.x/dist/alpine-clipboard.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@1.x.x/dist/alpine-clipboard.js"></script>
 ```
 
 ### NPM
@@ -32,6 +32,23 @@ Add the `$clipboard` magic property to your project by importing the package **b
 
 ```js
 import "@ryangjchandler/alpine-clipboard"
+// import "alpinejs"
+```
+
+#### Legacy Browser Support
+
+If you need to support legacy browsers, you can import the `alpine-clipboard.ie11.js` file instead.
+
+**CDN**
+
+```
+<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@1.x.x/dist/alpine-clipboard.ie11.js"></script>
+```
+
+**NPM**
+
+```js
+import "@ryangjchandler/alpine-clipboard/src/index.ie11.js"
 // import "alpinejs"
 ```
 
