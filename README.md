@@ -16,13 +16,11 @@ This plugin adds a new `$clipboard` magic property to all of your Alpine compone
 
 ### CDN
 
-Include the following `<script>` tag in the `<head>` of your document:
+Include the following `<script>` tag at the end of your `<body>`:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@0.2.x/dist/alpine-clipboard.umd.js"></script>
 ```
-
-> **Important**: This must be added **before** loading Alpine.js when using CDN links.
 
 ### NPM
 
