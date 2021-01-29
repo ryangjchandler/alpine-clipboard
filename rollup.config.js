@@ -7,8 +7,9 @@ export default {
     input: 'src/index.js',
     output: [
         {
+            name: 'AlpineClipboard',
             file: 'dist/alpine-clipboard.js',
-            format: 'es',
+            format: 'umd',
             sourcemap: true
         }
     ],

@@ -1,24 +1,36 @@
-const AlpineClipboard = {
-  start() {
-    if (!window.Alpine) {
-      throw new Error('Alpine is required for `alpine-clipboard` to work.');
-    }
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.AlpineClipboard = factory());
+}(this, (function () { 'use strict';
 
-    Alpine.addMagicProperty('clipboard', () => {
-      return function (target) {
-        return window.navigator.clipboard.writeText(target);
-      };
-    });
-  }
+    const AlpineClipboard = {
+      start() {
+        if (!window.Alpine) {
+          throw new Error('Alpine is required for `alpine-clipboard` to work.');
+        }
 
-};
+        Alpine.addMagicProperty('clipboard', () => {
+          return function (target) {
+            if (typeof target === 'function') {
+              target = target();
+            }
 
-const deferrer = window.deferLoadingAlpine || (callback => callback());
+            return window.navigator.clipboard.writeText(target);
+          };
+        });
+      }
 
-window.deferLoadingAlpine = function (callback) {
-  AlpineClipboard.start();
-  deferrer(callback);
-};
+    };
 
-export default AlpineClipboard;
+    const deferrer = window.deferLoadingAlpine || (callback => callback());
+
+    window.deferLoadingAlpine = function (callback) {
+      AlpineClipboard.start();
+      deferrer(callback);
+    };
+
+    return AlpineClipboard;
+
+})));
 //# sourceMappingURL=alpine-clipboard.js.map

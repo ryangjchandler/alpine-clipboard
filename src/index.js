@@ -6,6 +6,10 @@ const AlpineClipboard = {
 
         Alpine.addMagicProperty('clipboard', () => {
             return function (target) {
+                if (typeof target === 'function') {
+                    target = target()
+                }
+                
                 return window.navigator.clipboard.writeText(target)
             }
         })

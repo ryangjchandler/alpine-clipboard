@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <title>Alpine Clipboard</title>
+    <title>Alpine Clipboard IE11</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 </head>
 <body>
     <div x-data="{ input: '' }">
         <input x-model="input">
-        <button type="button" @click="await $clipboard(input)">Copy to Clipboard</button>
+        <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
     </div>
 
     <div x-data="{}">
         <button type="button" @click="$clipboard(() => 'Testing')">Copy 'Testing' to Clipboard</button>
     </div>
 
-    <script src="../dist/alpine-clipboard.js"></script>
+    <script src="../dist/alpine-clipboard.ie11.js"></script>
 </body>

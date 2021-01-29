@@ -9,7 +9,7 @@
         "url": "https://github.com/ryangjchandler/alpine-clipboard"
     },
     "main": "dist/alpine-clipboard.ie11.js",
-    "module": "dist/alpine-clipboard.js",
+    "module": "src/index.js",
     "scripts": {
         "build": "rollup -c && rollup -c rollup.ie11.config.js",
         "watch": "rollup -c -w"
