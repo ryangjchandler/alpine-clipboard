@@ -22,7 +22,7 @@ npm install @ryangjchandler/alpine-clipboard
 
 > Also available via yarn add @ryangjchandler/alpine-clipboard
 
-Add `$clipboard` to your project by imported before Alpine.js.
+Add the `$clipboard` magic property to your project by importing the package **before** Alpine.js.
 
 ```js
 import "@ryangjchandler/alpine-clipboard"
