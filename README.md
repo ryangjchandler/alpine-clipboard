@@ -69,9 +69,7 @@ The clipboard will now contain `["foo","bar"]`.
 
 ## Versioning
 
-This projects follow the [Semantic Versioning](https://semver.org/) guidelines. This means that there *could* be breaking changes on minor version changes, up until v1.x is reached.
-
-For example, 0.1 -> 0.2 might introduce a breaking change.
+This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
 
 ## License
 
