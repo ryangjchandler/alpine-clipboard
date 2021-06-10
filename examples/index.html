@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Alpine Clipboard</title>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
 </head>
 <body>
     <div x-data="{ input: '' }">
@@ -11,6 +11,14 @@
 
     <div x-data="{}">
         <button type="button" @click="$clipboard(() => 'Testing')">Copy 'Testing' to Clipboard</button>
+    </div>
+
+    <div x-data="{ items: ['foo', 'bar'] }">
+        <template x-for="item in items">
+            <p x-text="item"></p>
+        </template>
+
+        <button type="button" @click="$clipboard(items)">Copy the JSON representation of `items` to your clipboard</button>
     </div>
 
     <script src="../dist/alpine-clipboard.js"></script>
