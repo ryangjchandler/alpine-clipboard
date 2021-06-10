@@ -1,15 +1,15 @@
 {
     "name": "@ryangjchandler/alpine-clipboard",
     "description": "Simply copy to the users clipboard in your Alpine.js components.",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "license": "MIT",
     "author": "Ryan Chandler <support@ryangjchandler.co.uk>",
     "repository": {
         "type": "git",
         "url": "https://github.com/ryangjchandler/alpine-clipboard"
     },
-    "main": "dist/alpine-clipboard.ie11.js",
-    "module": "src/index.js",
+
+    "main": "src/index.js",
     "scripts": {
         "build": "rollup -c && rollup -c rollup.ie11.config.js",
         "watch": "rollup -c -w"
