@@ -8,15 +8,14 @@
         "type": "git",
         "url": "https://github.com/ryangjchandler/alpine-clipboard"
     },
-
     "main": "src/index.js",
     "scripts": {
-        "build": "rollup -c && rollup -c rollup.ie11.config.js",
+        "build": "rollup -c",
         "watch": "rollup -c -w"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.12.11",
         "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
         "rollup": "^2.35.1",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-filesize": "^9.1.0",
