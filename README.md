@@ -18,10 +18,10 @@ This plugin adds a new `$clipboard` magic property to all of your Alpine compone
 
 ### CDN
 
-Include the following `<script>` tag at the end of your `<body>`:
+Include the following `<script>` tag in the `<head>` of your document, just before Alpine.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@1.x.x/dist/alpine-clipboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@2.x.x/dist/alpine-clipboard.js" defer></script>
 ```
 
 ### NPM
@@ -33,25 +33,13 @@ npm install @ryangjchandler/alpine-clipboard
 Add the `$clipboard` magic property to your project by importing the package **before** Alpine.js.
 
 ```js
-import "@ryangjchandler/alpine-clipboard"
-// import "alpinejs"
-```
+import Alpine from 'alpinejs'
+import Clipboard from "@ryangjchandler/alpine-clipboard"
 
-#### Legacy Browser Support
+Alpine.plugin(Clipboard)
 
-If you need to support legacy browsers, you can import the `alpine-clipboard.ie11.js` file instead.
-
-**CDN**
-
-```
-<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@1.x.x/dist/alpine-clipboard.ie11.js"></script>
-```
-
-**NPM**
-
-```js
-import "@ryangjchandler/alpine-clipboard/src/index.ie11.js"
-// import "alpinejs"
+window.Alpine = Alpine
+window.Alpine.start()
 ```
 
 ## Usage
@@ -61,7 +49,9 @@ To copy some data to the clipboard, invoke `$clipboard` from an event handler in
 ```html
 <div x-data="{ input: '' }">
     <input x-model="input">
-    <button type="button" @click="$clipboard(input)">Copy to Clipboard</button>
+    <button type="button" @click="$clipboard(input)">
+        Copy to Clipboard
+    </button>
 </div>
 ```
 

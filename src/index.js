@@ -5,6 +5,10 @@ export default function (Alpine) {
                 target = target()
             }
 
+            if (typeof target === 'object') {
+                target = JSON.stringify(target)
+            }
+
             return window.navigator.clipboard.writeText(target)
         }
     })
