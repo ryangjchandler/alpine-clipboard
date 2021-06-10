@@ -14,9 +14,6 @@
         "build": "rollup -c && rollup -c rollup.ie11.config.js",
         "watch": "rollup -c -w"
     },
-    "dependencies": {
-        "alpinejs": "^2.6.0"
-    },
     "devDependencies": {
         "@babel/preset-env": "^7.12.11",
         "@babel/core": "^7.12.10",
