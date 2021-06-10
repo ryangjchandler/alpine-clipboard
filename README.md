@@ -75,6 +75,6 @@ For example, 0.1 -> 0.2 might introduce a breaking change.
 
 ## License
 
-Copyright (c) 2020 Ryan Chandler and contributors
+Copyright (c) 2021 Ryan Chandler and contributors
 
 Licensed under the MIT license, see [LICENSE.md](LICENSE.md) for details.
