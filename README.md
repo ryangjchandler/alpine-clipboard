@@ -9,6 +9,7 @@ Copy text to the user's clipboard.
 [![Monthly downloads via CDN](https://data.jsdelivr.com/v1/package/npm/@ryangjchandler/alpine-clipboard/badge)](https://www.jsdelivr.com/package/npm/@ryangjchandler/alpine-clipboard)
 
 > Since v2.0, this package only supports Alpine v3.x. If you're still using Alpine 2.x, please use [v1.0](https://github.com/ryangjchandler/alpine-clipboard/tree/v1.0.0) of this package.
+
 ## About
 
 This plugin adds a new `$clipboard` magic property to all of your Alpine components that can be used to copy any piece of data to the user's clipboard.
