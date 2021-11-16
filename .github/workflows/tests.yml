@@ -26,6 +26,3 @@ jobs:
 
       - name: Build files
         run: npm run build
-
-      - name: Run test suite
-        run: npm run test
