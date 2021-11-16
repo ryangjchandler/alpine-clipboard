@@ -67,6 +67,20 @@ Since you can pass any properties through to the `$clipboard` function, if you p
 
 The clipboard will now contain `["foo","bar"]`.
 
+### Hooks
+
+If you are using the `npm` installation method for this package or the ESM distribution, you can use the `Clipboard.configure()` method to attach an `onCopy` hook to the clipboard.
+
+```js
+import Clipboard from '@ryangjchandler/alpine-clipboard'
+
+Alpine.plugin(Clipboard.configure({
+    onCopy: () => {
+        console.log('Copied!')
+    }
+}))
+```
+
 ## Versioning
 
 This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
