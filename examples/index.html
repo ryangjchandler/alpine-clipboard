@@ -21,5 +21,13 @@
         <button type="button" @click="$clipboard(items)">Copy the JSON representation of `items` to your clipboard</button>
     </div>
 
+    <div x-data="{ text: 'boo' }">
+        <button x-clipboard="text">This uses clipboard directive to copy the text "boo" to your clipboard.</button>
+
+        <button x-clipboard.raw="Here is some raw text to copy to the clipboard.">
+            This will let you copy any raw text in the directive.
+        </button>
+    </div>
+
     <script src="../dist/alpine-clipboard.js"></script>
 </body>

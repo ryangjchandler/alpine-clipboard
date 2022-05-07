@@ -55,6 +55,28 @@ To copy some data to the clipboard, invoke `$clipboard` from an event handler in
 </div>
 ```
 
+### Directive
+
+This package also includes an `x-clipboard` directive that can be added to any element (usually a `button`) and it will copy the result of the expression on `click`.
+
+```html
+<div x-data="{ input: 'Foo!' }">
+    <button x-clipboard="input">
+        Copy to Clipboard
+    </button>
+</div>
+```
+
+If you are rendering on the server, you might prefer to copy raw content instead of evaluating the expression as JavaScript. This can be done by adding the `.raw` modifier to the directive.
+
+Here's a Blade snippet as an example:
+
+```blade
+<button x-clipboard.raw="{{ $post->url() }}">
+    Copy to Clipboard
+</button>
+```
+
 ### `Object` and `Array`
 
 Since you can pass any properties through to the `$clipboard` function, if you pass through an `Object` or `Array`, it will be run through `JSON.stringify` before being copied to the clipboard.
