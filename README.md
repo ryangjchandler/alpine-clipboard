@@ -45,7 +45,7 @@ window.Alpine.start()
 ## Usage
 
 > **Note**
-> The Clipboard Web-API requires a secure context (i.e. https) to function in most browsers ([more info](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard)).
+> The Clipboard API that this package uses only works in a secure context (`https`) and `localhost`. 
 
 To copy some data to the clipboard, invoke `$clipboard` from an event handler in your component.
 
