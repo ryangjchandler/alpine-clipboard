@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alpine Clipboard</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <button type="button" x-data x-on:click="$clipboard(document.getElementById('target').outerHTML, 'text/html')">Copy as HTML</button>
+
+    <div id="target" style="background: red; width: 200px; height: 200px; color: white;">
+        <p>Hello, world.</p>
+    </div>
+
+    <script src="../dist/alpine-clipboard.js"></script>
+</body>
