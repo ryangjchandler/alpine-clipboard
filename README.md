@@ -106,6 +106,16 @@ Alpine.plugin(Clipboard.configure({
 }))
 ```
 
+## Specifying the mime type of the content
+
+If you're using the `$clipboard` magic function, you can pass an additional argument to the function specifying the mime-type of the content. This is especially useful for copying things as HTML and being able to paste into rich text editors, email clients, etc.
+
+```html
+<button x-on:click="$clipboard(content, 'text/html')">
+    Copy as HTML
+</button>
+```
+
 ## Versioning
 
 This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
