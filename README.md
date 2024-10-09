@@ -30,7 +30,7 @@ Include the following `<script>` tag in the `<head>` of your document, just befo
 npm install @ryangjchandler/alpine-clipboard
 ```
 
-Add the `$clipboard` magic property to your project by importing the package **before** Alpine.js.
+Add the `$clipboard` magic property to your project by registering the plugin with Alpine.
 
 ```js
 import Alpine from 'alpinejs'
@@ -44,7 +44,7 @@ window.Alpine.start()
 
 ## Usage
 
-> **Note**
+> [!NOTE]
 > The Clipboard API that this package uses only works in a secure context (`https`) and `localhost`. 
 
 To copy some data to the clipboard, invoke `$clipboard` from an event handler in your component.
